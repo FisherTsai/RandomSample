@@ -1,7 +1,7 @@
 ﻿bool done = new Random().Next(0, 11) >= 3;
 if (done == false)
 {
-    return -1;
+    throw new Exception("大失敗！");
 }
 
 int count = new Random().Next(0, 11);
